@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <meta name="viewport" content="user-scalable=no">
+        <title>esp8266 controller</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="container justify-content-end">
+                <div class="header">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/code">Source Code</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/schematic">Schematics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/logout">Log out</a>
+                            </li>
+  
+  
+  
+                        </ul>
+                </div>
+                <div>
+                    <div id="connectionStatusDiv">Not connected</div>
+                        <h2>Connect to esp8266</h2>
+                        <div id="connectFormDiv">
+                            <input type="text" id="serverAddressTBox"> 
+                            <button class="btn-primary" onclick="connect()" id="connectBtn">Connect to Server</button>
+                        </div>
+                        <div id="messageFormDiv">
+                            <input type="text" id="messageTBox" value=""><br/>
+                            <button class="btn-primary" onclick="sendMessage()">Send</button>
+                        </div>
+                        <script src="static/script.js"></script>
+                </div>
+
+                <div class="content-down">
+                    <p><h2>Please follow these instructions</h2></p>
+                    <p>
+                        <h6>
+                            <ol>1. Copy the code under source code and paste it into your arduino IDE. Make sure you have all the reqired libraries installed.</ol>
+                            <ol>2. Upload the code on your Arduino IDE and after it's done uploading open the serial monitor ,copy the IP address desplayed and paste it below to connect to your esp8266</ol>
+                            <ol>3. When it's connected use the arrow keys on your keyboard to control your esp car</ol>
+                            <ol>4. Check under schematics above to get the schematics of the car </ol>
+                            <ol>5. Disconnect and log out when you are done</ol>
+                        </h6>
+                    </p>
+
+                </div>
+                <div class="footer">
+                    <h6> the author of this application is Luther Sibanda.(c) </h6>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
