@@ -1,4 +1,4 @@
- # ESP8266 WiFi Car application
+ # ESP8266 Remote Control Car
 
 #### Video Demo: < https://youtu.be/C9AkDO3eui8 >
 
